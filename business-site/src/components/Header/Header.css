@@ -1,0 +1,49 @@
+header {
+  height: 9vh;
+  margin: auto;
+  width: 85vw;
+  line-height: 9vh;
+  display: block;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 2vw;
+} 
+
+.menu {
+  max-height: 9vh;
+  display: block;
+  float: right;
+  line-height: 9vh;
+}
+
+.menu button a {
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+  transition: 300ms;
+  opacity: 0.7;
+}
+
+.menu button a:not(:hover:last-of-type) {
+  opacity: 1;
+}
+
+.menu button:not(:last-of-type) {
+  margin-right: 2.5vw;
+}
+
+.menu button:last-of-type {
+  margin-left: 2.5vw;
+  border: 2px solid #ccc;
+  padding: 1.5vh 1.5vw;
+  border-radius: 100px;
+  transition: 300ms;
+}
+
+.menu button:last-of-type:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}

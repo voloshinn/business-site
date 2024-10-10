@@ -1,0 +1,36 @@
+footer {
+  height: 16em;
+  width: 100%;
+  background-color: #1e1e1e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.3em;
+  font-size: 1.1em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.footer div {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.footer div span {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer .navigation li {
+  text-decoration: underline;
+  cursor: pointer;
+}
