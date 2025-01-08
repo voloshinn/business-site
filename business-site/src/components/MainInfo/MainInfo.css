@@ -1,12 +1,12 @@
 .presentation {
-  background: url('./камеры.jpg') no-repeat;
+  background: url("./камеры.jpg") no-repeat;
   width: 100%;
   min-height: 91vh;
   background-size: auto;
   background-position: center -200px;
   background-blend-mode: multiply;
   background-color: #bcbcbc;
-} 
+}
 
 .text-and-buttons {
   padding: 30vh 20vw;
@@ -33,6 +33,7 @@
   font-size: 1em;
   border: none;
   border: 2px solid #ccc;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
 }
 
 .btn-feedback:hover {

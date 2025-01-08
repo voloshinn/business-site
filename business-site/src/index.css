@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   list-style: none;
+}
+
+body {
+  background-color: #f9f9f9;
 }
 
 button {
@@ -17,4 +21,28 @@ button {
 a {
   text-decoration: none;
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2c3e50;
+  border-radius: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 6px;
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #34495e;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: transparent;
 }
