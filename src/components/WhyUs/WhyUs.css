@@ -1,0 +1,50 @@
+.why-us {
+  text-align: center;
+  padding: 2em;
+  background-color: #f9f9f9;
+}
+
+.why-us h2 {
+  font-size: 2em;
+  margin-bottom: 1.5em;
+  color: #2c3e50;
+}
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reason-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  background-color: #f9f9f9;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reason-number {
+  font-size: 4em;
+  color: #bdc3c7;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.reason-card h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+
+.reason-card p {
+  font-size: 1em;
+  color: #7f8c8d;
+  text-align: center;
+  line-height: 1.5em;
+}
