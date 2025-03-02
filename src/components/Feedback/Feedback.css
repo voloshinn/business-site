@@ -1,23 +1,19 @@
 .feedback-wrapper {
   width: 100%;
+  padding: 2em auto;
   height: auto;
   display: flex;
   flex-direction: column;
   display: flexbox;
   align-items: center;
-  margin-bottom: 1vh;
+  /* margin-bottom: 1vh; */
   background-color: #f9f9f9;
 }
 
 .feedback-wrapper .title {
-  /* text-align: center;
-  font-weight: 600;
   font-size: 2em;
-  margin-bottom: 2vh;
-  color: #2c3e50; */
-  font-size: 2em;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-top: 0.25em;
   color: #2c3e50;
 }
 
@@ -33,10 +29,10 @@
 .feedback-form input {
   min-width: 50%;
   align-items: center;
-  padding: 1.5vh;
+  padding: 1.2em;
   width: 80vw;
   margin-bottom: 1.5vh;
-  border-radius: 20px;
+  border-radius: 2em;
   border: 1.5px solid silver;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
@@ -49,9 +45,31 @@
   margin-top: 2vh;
 }
 
+.feedback-form .wrapper-feedback-topic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  line-height: 2em;
+}
+
+.feedback-form .wrapper-feedback-topic {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.feedback-form .wrapper-feedback-topic select {
+  align-items: center;
+  border-radius: 2em;
+  border: 1.5px solid silver;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 0.8em;
+  font-size: 0.9em;
+}
+
 .btn-wrapper {
   padding: 1em 0 2em 0;
-  /* width: 100%; */
   flex-direction: column;
   @media (max-width: 500px) {
     display: flex;
@@ -73,8 +91,8 @@
   border: 2px solid rgba(66, 49, 135, 1);
   background-color: #fff;
   cursor: pointer;
-  align-self: center; /* Расположение кнопки по центру ширины секции */
-  margin-top: auto; /* Перемещение кнопки вниз секции */
+  align-self: center;
+  margin-top: auto;
 }
 
 #submit:disabled {
@@ -88,13 +106,25 @@
 }
 
 @media (max-width: 1024px) {
+  .feedback-form {
+    justify-content: center;
+    padding: auto;
+  }
   .feedback-form input {
     width: 90vw;
+  }
+  .wrapper-feedback-topic {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 0;
   }
 }
 
 @media (max-width: 480px) {
   .feedback-form input {
+    width: 85vw;
+  }
+  .wrapper-feedback-topic {
     width: 85vw;
   }
 }

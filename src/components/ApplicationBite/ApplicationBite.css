@@ -1,0 +1,33 @@
+.feedback-block {
+  text-align: center;
+  border-radius: 10px;
+  max-width: 80vw;
+  margin: 2em auto;
+}
+
+.feedback-content h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+
+.feedback-content p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+  margin-bottom: 1.5em;
+}
+
+.feedback-button {
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+  background-color: #5a4ec7;
+}

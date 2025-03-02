@@ -52,7 +52,12 @@ export default function Feedback() {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, surname, phoneNumber, commentary }),
+      body: JSON.stringify({
+        name,
+        surname,
+        phoneNumber,
+        commentary,
+      }),
     })
       .then((response) => response.json())
       .then((result) => toast.success(result.message));
@@ -67,7 +72,7 @@ export default function Feedback() {
         Заполните форму и получите бесплатный выезд и коммерческое предложение.
       </span>
       <div className="feedback-form">
-        <form action="">
+        <form method="post" action="/send.php">
           <input
             type="text"
             id="name"
@@ -110,7 +115,7 @@ export default function Feedback() {
             }}
             onChange={handleChange}
             placeholder="Комментарий"
-          />{" "}
+          />
           <br />
           <div className="btn-wrapper">
             <button id="submit" disabled={formNotValid} onClick={submitData}>

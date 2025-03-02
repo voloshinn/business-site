@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Feedback from "./components/Feedback/Feedback";
 import WhyUs from "./components/WhyUs/WhyUs";
 import FeedbackSection from "./components/FeedbackSection/FeedbackSection";
+import ApplicationBite from "./components/ApplicationBite/ApplicationBite";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <MainInfo />
       <Price />
       <WhyUs />
+      {/* <ApplicationBite /> */}
       {/* <FeedbackSection /> */}
       <Feedback />
       <Footer />
