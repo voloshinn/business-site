@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-section">
+        {/* <div className="footer-section">
           <h3>Навигация</h3>
           <ul>
             <li>
@@ -20,7 +20,7 @@ export default function Footer() {
               <a href="#contacts">Контакты</a>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <div className="footer-section">
           <h3>Контакты и информация</h3>

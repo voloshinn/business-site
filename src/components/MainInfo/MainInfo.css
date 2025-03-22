@@ -19,8 +19,8 @@
 }
 
 .subtitle {
-  font-size: 1.1em;
-  color: #ccc;
+  font-size: 1.2em;
+  color: #fff;
   font-weight: 500;
 }
 
@@ -39,3 +39,66 @@
 .btn-feedback:hover {
   opacity: 0.7;
 }
+
+/* /////////////////////////// */
+/* .presentation {
+  background: url("./камеры.jpg") no-repeat center;
+  width: 100%;
+  min-height: 91vh;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: #bcbcbc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-and-buttons {
+  padding: 10vh 5vw;
+  color: #fff;
+  max-width: 90%;
+}
+
+.text-and-buttons .title {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.btn-feedback {
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: 300ms;
+  font-weight: 500;
+  font-size: 1em;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-feedback:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .text-and-buttons {
+    padding: 5vh 5vw;
+  }
+  .text-and-buttons .title {
+    font-size: 2em;
+  }
+  .subtitle {
+    font-size: 1em;
+  }
+  .btn-feedback {
+    font-size: 0.9em;
+    padding: 0.8rem 1.5rem;
+  }
+} */

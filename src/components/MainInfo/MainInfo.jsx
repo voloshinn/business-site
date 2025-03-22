@@ -7,7 +7,7 @@ export default function MainInfo() {
         <div className="text-and-buttons">
           <span className="title">ВИДЕОНАБЛЮДЕНИЕ</span> <br /> <br />
           <span className="subtitle">
-            Домофония, Контроль доступа, Охранные системы
+            Домофония, контроль доступа, охранные системы
           </span>{" "}
           <br /> <br />
           <button className="btn-feedback">
