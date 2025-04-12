@@ -6,22 +6,36 @@
   background-position: center -200px;
   background-blend-mode: multiply;
   background-color: #bcbcbc;
+  @media (max-width: 748px) {
+    min-height: 50vh;
+    background-position: -100px -100px;
+    background-size: 70em;
+  }
 }
 
 .text-and-buttons {
   padding: 30vh 20vw;
   color: #fff;
+  @media (max-width: 748px) {
+    padding: 20vh 5vw;
+  }
 }
 
 .text-and-buttons .title {
   font-size: 3.1em;
   font-weight: 600;
+  @media (max-width: 748px) {
+    font-size: 1.8em;
+  }
 }
 
 .subtitle {
   font-size: 1.2em;
   color: #fff;
   font-weight: 500;
+  @media (max-width: 748px) {
+    font-weight: 400;
+  }
 }
 
 .btn-feedback {
@@ -32,8 +46,12 @@
   font-weight: 500;
   font-size: 1em;
   border: none;
-  border: 2px solid #ccc;
+  border: 2px solid white;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  @media (max-width: 748px) {
+    font-weight: 430;
+    padding: 1em;
+  }
 }
 
 .btn-feedback:hover {

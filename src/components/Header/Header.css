@@ -5,12 +5,19 @@ header {
   line-height: 9vh;
   display: block;
   color: #2c3e50;
+  @media (max-width: 748px) {
+    height: 10vh;
+    line-height: 10vh;
+  }
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 1.87em;
   font-weight: 500;
   margin-left: 2vw;
+  @media (max-width: 748px) {
+    font-size: 1.5em;
+  }
 }
 
 .menu {

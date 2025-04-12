@@ -5,7 +5,7 @@ export default function MainInfo() {
     <main>
       <div className="presentation">
         <div className="text-and-buttons">
-          <span className="title">ВИДЕОНАБЛЮДЕНИЕ</span> <br /> <br />
+          <span className="title">Видеонаблюдение</span> <br /> <br />
           <span className="subtitle">
             Домофония, контроль доступа, охранные системы
           </span>{" "}

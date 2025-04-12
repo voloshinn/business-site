@@ -61,9 +61,9 @@ export default function Feedback() {
         <button>
           <a href="#">Контакты</a>
         </button> */}
-        <button className="order-btn" onClick={toggleModal}>
+        {/* <button className="order-btn" onClick={toggleModal}>
           Сделать заказ
-        </button>
+        </button> */}
       </nav>
       <ModalFeedback isOpen={isModalOpen} onClose={toggleModal} />
     </header>
