@@ -44,7 +44,7 @@ export default function Feedback() {
 
   return (
     <header>
-      <span className="logo">ВСЁ ПОД КОНТРОЛЕМ</span>
+      <span className="logo">Всё под контролем</span>
       <button className="menu-icon" onClick={toggleMenu}>
         {/* {isMenuOpen ? <FiX size={30} /> : <FiMenu size={30} />} */}
       </button>
@@ -61,9 +61,9 @@ export default function Feedback() {
         <button>
           <a href="#">Контакты</a>
         </button> */}
-        {/* <button className="order-btn" onClick={toggleModal}>
+        <button className="order-btn" onClick={toggleModal}>
           Сделать заказ
-        </button> */}
+        </button>
       </nav>
       <ModalFeedback isOpen={isModalOpen} onClose={toggleModal} />
     </header>

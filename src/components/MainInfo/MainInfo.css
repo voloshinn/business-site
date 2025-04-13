@@ -6,6 +6,10 @@
   background-position: center -200px;
   background-blend-mode: multiply;
   background-color: #bcbcbc;
+  @media (max-width: 1024px) {
+    min-height: 70vh;
+    background-position: -100px -100px;
+  }
   @media (max-width: 748px) {
     min-height: 50vh;
     background-position: -100px -100px;
@@ -14,31 +18,70 @@
 }
 
 .text-and-buttons {
+  display: flexbox;
   padding: 30vh 20vw;
   color: #fff;
+  @media (max-width: 1024px) {
+    padding: 20vh 10vw;
+  }
   @media (max-width: 748px) {
     padding: 20vh 5vw;
   }
 }
 
 .text-and-buttons .title {
-  font-size: 3.1em;
+  font-size: 3.2em;
   font-weight: 600;
+  @media (max-width: 1024px) {
+    font-size: 3em;
+  }
   @media (max-width: 748px) {
-    font-size: 1.8em;
+    font-size: 2em;
+    line-height: 2em;
   }
 }
 
 .subtitle {
   font-size: 1.2em;
   color: #fff;
-  font-weight: 500;
+  font-weight: 450;
+  line-height: 2em;
+  @media (max-width: 1024px) {
+    font-size: 1.4em;
+    line-height: 1.8em;
+  }
   @media (max-width: 748px) {
     font-weight: 400;
+    line-height: 1.3em;
+  }
+}
+
+.second-order-btn {
+  min-width: 40%;
+  visibility: hidden;
+  margin-bottom: auto;
+  transition: 300ms;
+  color: #000;
+  padding: 1em 2em;
+  border-radius: 10em;
+  border: 2px solid rgba(0, 86, 210, 1);
+  transition: 300ms;
+  font-weight: 600;
+  font-size: 1em;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 1.3em 0em;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  margin-top: -5em;
+  margin-bottom: 0em;
+  @media (max-width: 748px) {
+    margin-top: 1em;
+    visibility: visible;
   }
 }
 
 .btn-feedback {
+  min-width: 40%;
   color: #fff;
   padding: 1.5vh 1.5vw;
   border-radius: 100px;
@@ -48,7 +91,9 @@
   border: none;
   border: 2px solid white;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+  margin-top: -5em;
   @media (max-width: 748px) {
+    margin-top: 1em;
     font-weight: 430;
     padding: 1em;
   }

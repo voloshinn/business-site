@@ -93,7 +93,6 @@
     font-size: 1em;
   } */
 }
-
 /* Адаптивность для экранов малого размера */
 @media (max-width: 768px) {
   .price-wrapper {

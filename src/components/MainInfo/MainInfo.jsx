@@ -5,11 +5,13 @@ export default function MainInfo() {
     <main>
       <div className="presentation">
         <div className="text-and-buttons">
-          <span className="title">Видеонаблюдение</span> <br /> <br />
+          <span className="title">Видеонаблюдение</span> <br />
           <span className="subtitle">
             Домофония, контроль доступа, охранные системы
           </span>{" "}
-          <br /> <br />
+          <br />
+          <button className="second-order-btn">Сделать заказ</button>
+          <br />
           <button className="btn-feedback">
             <a href="#price">Узнать подробности</a>
           </button>
