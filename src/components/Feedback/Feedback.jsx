@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Feedback.css";
-import { toast } from "react-toastify";
+import TelegramFormHandler from "./TelegramFormHandler";
 
 export default function Feedback() {
   const [name, setName] = useState("");
@@ -45,24 +45,6 @@ export default function Feedback() {
     }
   }, [hasNameError, hasSurnameError, hasPhoneNumberError, hasCommentaryError]);
 
-  const submitData = (e) => {
-    e.preventDefault();
-    fetch("https://mehiko-motors.duckdns.org/api/telegram", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        surname,
-        phoneNumber,
-        commentary,
-      }),
-    })
-      .then((response) => response.json())
-      .then((result) => toast.success(result.message));
-  };
-
   return (
     <div className="feedback-wrapper">
       <h2 id="feedback" className="title">
@@ -72,10 +54,11 @@ export default function Feedback() {
         Заполните форму и получите бесплатный выезд и коммерческое предложение.
       </span>
       <div className="feedback-form">
-        <form method="post" action="/send.php">
+        <form id="contact-form">
           <input
             type="text"
             id="name"
+            name="name"
             value={name}
             style={{
               border: hasNameError ? "1px solid red" : null,
@@ -87,6 +70,7 @@ export default function Feedback() {
           <input
             type="text"
             id="surname"
+            name="surname"
             value={surname}
             style={{
               border: hasSurnameError ? "1px solid red" : null,
@@ -98,6 +82,7 @@ export default function Feedback() {
           <input
             type="tel"
             id="phoneNumber"
+            name="phoneNumber"
             value={phoneNumber}
             style={{
               border: hasPhoneNumberError ? "1px solid red" : null,
@@ -109,6 +94,7 @@ export default function Feedback() {
           <input
             type="text"
             id="commentary"
+            name="commentary"
             value={commentary}
             style={{
               border: hasCommentaryError ? "1px solid red" : null,
@@ -118,11 +104,12 @@ export default function Feedback() {
           />
           <br />
           <div className="btn-wrapper">
-            <button id="submit" disabled={formNotValid} onClick={submitData}>
+            <button type="submit" id="submit-btn" disabled={formNotValid}>
               Отправить
             </button>
           </div>
         </form>
+        <TelegramFormHandler />
       </div>
     </div>
   );
