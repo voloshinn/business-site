@@ -20,7 +20,11 @@ button {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: black;
+}
+
+.btn-feedback a {
+  color: white;
 }
 
 ::-webkit-scrollbar {

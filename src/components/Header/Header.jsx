@@ -35,7 +35,7 @@ import ModalFeedback from "../ModalFeedback/ModalFeedback";
 //   );
 // }
 
-export default function Feedback() {
+export default function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -49,23 +49,10 @@ export default function Feedback() {
         {/* {isMenuOpen ? <FiX size={30} /> : <FiMenu size={30} />} */}
       </button>
       <nav className={`menu ${isMenuOpen ? "open" : ""}`}>
-        {/* <button>
-          <a href="#">Цены</a>
-        </button>
-        <button>
-          <a href="#">Преимущества</a>
-        </button>
-        <button>
-          <a href="#">Наши проекты</a>
-        </button>
-        <button>
-          <a href="#">Контакты</a>
-        </button> */}
-        <button className="order-btn" onClick={toggleModal}>
-          Сделать заказ
+        <button className="order-btn">
+          <a href="#feedback">Отправить заявку</a>
         </button>
       </nav>
-      <ModalFeedback isOpen={isModalOpen} onClose={toggleModal} />
     </header>
   );
 }

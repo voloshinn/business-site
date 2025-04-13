@@ -10,7 +10,9 @@ export default function MainInfo() {
             Домофония, контроль доступа, охранные системы
           </span>{" "}
           <br />
-          <button className="second-order-btn">Сделать заказ</button>
+          <button className="second-order-btn">
+            <a href="#feedback">Отправить заявку</a>
+          </button>
           <br />
           <button className="btn-feedback">
             <a href="#price">Узнать подробности</a>

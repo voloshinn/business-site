@@ -1,4 +1,5 @@
 import "./Price.css";
+import React from "react";
 
 export default function Price() {
   return (
@@ -17,7 +18,9 @@ export default function Price() {
           <b>•</b> Контроль доступа для защиты семьи и имущества
           <br /> <br />
         </span>
-        <button>от 5 000 ₽</button>
+        <button>
+          <a href="#feedback">от 5 000 ₽</a>
+        </button>
       </section>
 
       <section>
@@ -34,7 +37,10 @@ export default function Price() {
           <b>•</b> Улучшение сервиса и клиентского опыта
           <br />
         </span>
-        <button>от 15 000 ₽</button>
+        <button>
+          {" "}
+          <a href="#feedback">от 15 000 ₽</a>
+        </button>
       </section>
 
       <section>
@@ -51,7 +57,9 @@ export default function Price() {
           <b>•</b> Анализ рабочих процессов для увеличения эффективности
           <br />
         </span>
-        <button>от 20 000 ₽</button>
+        <button>
+          <a href="#feedback">от 20 000 ₽</a>
+        </button>
       </section>
     </article>
   );

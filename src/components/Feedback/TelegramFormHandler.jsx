@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function TelegramFormHandler() {
   const token = "7481464032:AAFEdO1T-E4InF5lwXfzJQkXe2DrzxS7fgU";
-  const chatId = "-4686115808";
+  const chatId = "-4708115294";
 
   useEffect(() => {
     const form = document.getElementById("contact-form");
